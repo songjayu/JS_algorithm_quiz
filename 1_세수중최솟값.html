@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(one, two, three){
+                let smallest = undefined;
+                (one<two) ? smallest=one : smallest=two;
+                (one<three) ? smallest=one : smallest = three;
+                (two<three) ? smallest=two : smallest = three;
+
+                return smallest;
+            }
+
+            console.log(solution(0, 2, 1));
+        </script>
+    </body>
+</html>
